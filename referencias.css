@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    height: 120vh;
+    width: 100%;
+    background-color: #9DB4C0; 
+}
+
+.barra_superior{
+    height: 20%;
+    width: 100%;
+    background-color: #0E172F;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+}
+
+.main_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_sdw{
+    margin-top: 5px;
+    cursor: pointer;
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.main{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 170px;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.main2{
+    font-size: 18px;
+    font-family: 'Hind Madurai', sans-serif;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.main2 a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-out 0.3s;
+}
+
+.main2 a:hover{
+    transition: all ease-in .3s;
+    color: #0a588c; 
+}
+
+/* Menu */
+
+.item{
+    border-radius: 10px;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+
+}
+
+.item:hover{
+    transition: all 0.5s;
+    transform: scale(0.95);
+    background-color: #3b9ee0;
+    color: black;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+ul{
+    list-style: none;
+    top: 74px;
+    width: 100%;
+    position: absolute;
+}
+
+label img{
+    width: 40px;
+    height: 40px;
+    filter: invert(100);
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 350px;
+    height: 500px;
+    left: -350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+label{
+    margin: 35px 10px;
+    position: absolute;
+    z-index: 1;
+}
