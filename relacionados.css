@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .container{
     max-height: 570vh;
     width: 100%;
