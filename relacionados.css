@@ -10,7 +10,7 @@ html{
 }
 
 .container{
-    height: 570vh;
+    max-height: 570vh;
     width: 100%;
     background-color: #9DB4C0; 
 }
